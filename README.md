@@ -1,8 +1,8 @@
-# _{Application Name}_
+# Javascript Week 1 Code Review: Doctor Lookup
 
 #### _{Brief description of application}, {Date of current version}_
 
-#### By _**{Andrew Dalton}**_
+#### By _**Andrew Dalton**_
 
 ## Description
 
