@@ -1,0 +1,22 @@
+{
+  "name": "doctor-lookup",
+  "description": "_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_",
+  "main": "gulpfile.js",
+  "authors": [
+    "Andrew <expandrew@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/drewlinn/Doctor-Lookup",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "moment": "^2.18.1",
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7"
+  }
+}

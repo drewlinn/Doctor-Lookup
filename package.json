@@ -1,7 +1,7 @@
 {
   "name": "doctor-lookup",
   "version": "1.0.0",
-  "description": "",
+  "description": "_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,6 +26,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/drewlinn/Doctor-Lookup.git"
-  }
+    "url": "git+https://github.com/drewlinn/Doctor-Lookup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/drewlinn/Doctor-Lookup/issues"
+  },
+  "homepage": "https://github.com/drewlinn/Doctor-Lookup#readme",
+  "dependencies": {}
 }
