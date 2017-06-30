@@ -1,19 +1,17 @@
 # Javascript Week 1 Code Review: Doctor Lookup
 
-#### _{Brief description of application}, {Date of current version}_
+#### This application allows the user to look up a doctor in their area who specializes in the area of their medical need. 06/30/17
 
-#### By _**Andrew Dalton**_
+#### By **Andrew Dalton**
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+This application is designed to help users find doctors in their area that can assist them with their individualized medical needs.
 
 ## Planning
 
 1. Configuration/dependencies
-  * This should include ALL dependencies.
-
-  * Install the following packages:
+  * In order for the application to function correctly, make certain the following packages are installed via your console or powershell:
 
     * Node Packages
       * The following were implemented for use in our Development Environment
@@ -36,54 +34,53 @@ _{This is a detailed description of your application. Its purpose and usage.  Gi
         * bootstrap - provides us with some rudimentary page styling tools.
         * moment.js - allows us to implement time and date related data.
 
-  * It should also include WHERE they are defined and used in the project
-  * It could include a short description of what each does for you
-
   2. Specifications
   | Behavior | Input | Output |
   | :--------| :---- | :------|
+  | User inputs location, is provided with a list of doctors | "Portland, OR" | "Dr. Jones, Dr. Grant, Dr. Jekyll" |
+  | User inputs ailment, is provided with a list of doctors that specialize in their ailment | "Feel bad" | "Dr. Feelgood, specializes in making people feel good." |
+  | Doctors are displayed by location | "Portland, OR, Feel bad" | "Here are the doctors in your area" |
 
 3. Integration
-  * Initial routes or index pages with all dependencies in Controller/index.html head
-  * Template/html page for ...
-  * Template/html page for ...
-  * Template/html page for ... (one for each route/integrated user story)
-  * Display...
-  * Integrate feature that...
+
 
 4. UX/UI
-  * Include and modify bootstrap/materialize/Sass etc.
-  * Develop custom style
+
 
 5. Polish
-  * Refactor minor portion of...
-  * Delete unused...
-  * Make README awesome
+
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* Go to https://github.com/drewlinn/special-doodle.git
+* Clone the repository into your local directory using your console or powershell.
+* Enter the folder using your command line
+* Perform the npm init and bower init commands to access the necessary packages.
+* In the command line, enter the command "gulp build"
+* Follow that with the command gulp-serve and that should take you directly to the page.
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+None are currently known.
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+If you discover technical issues with my program please contact me at expandrew@gmail.com
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+* HTML
+* Javascript
+* jQuery
+* CSS
+* SCSS
+* Bootstrap
+* Node
+* Node Package Manager
+* Bower
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+This software is licenses under the GPL license.
 
-Copyright (c) 2016 **_{Andrew Dalton, Epicodus}_**
+Copyright (c) 2016 **Andrew Dalton, Epicodus**
