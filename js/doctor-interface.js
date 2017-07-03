@@ -2,9 +2,9 @@ var Doctor = require('./../js/doctor.js').doctorModule;
 
 var displayDoctors = function(doctors) {
   $('.showDoctors').text('Here is a list of doctors in your area that specialize in ' + medicalIssue + ':');
-  doctors.forEach(function(doctor){
-    $('ul#listDoctors').append("<li>" + doctor + "</li>");
-  });
+  // doctors.forEach(function(doctor){
+  //   $('ul#listDoctors').append("<li>" + doctor + "</li>");
+  // });
 };
 
 $(document).ready(function() {
