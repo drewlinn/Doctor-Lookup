@@ -1,8 +1,7 @@
 var Doctor = require('./../js/doctor.js').doctorModule;
 
-var displayDoctors = function(doctors) {
+var displayDoctors = function(medicalIssue, doctors, doctor, first, last, title, specialty) {
   $('.showDoctors').text('Here is a list of doctors in your area that specialize in ' + medicalIssue + ':');
-
 };
 
 $(document).ready(function() {
@@ -13,7 +12,7 @@ $(document).ready(function() {
     $('#medical-issue').val("");
     // var location = $('#location').val();
     // $('#location').val("");
-    currentDoctorObject.getDoctors(displayDoctors);
+    currentDoctorObject.getDoctors(medicalIssue, displayDoctors);
   });
 });
 

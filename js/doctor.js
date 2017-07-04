@@ -1,10 +1,9 @@
 var apiKey = require('./../.env').apiKey;
 
-function Doctor(first, last, title, specialty) {
+function Doctor(first, last, title) {
     this.firstName = first;
     this.lastName = last;
     this.title = title;
-    this.specialty = specialty;
 }
 
 Doctor.prototype.getDoctors = function(medicalIssue) {
@@ -17,9 +16,8 @@ Doctor.prototype.getDoctors = function(medicalIssue) {
         doctor.firstName = object.profile.first_name;
         doctor.lastName = object.profile.last_name;
         doctor.title = object.profile.title;
-        doctor.specialty = object.specialties[0].actor;
         doctors.push(object);
-        console.log(doctor);
+        console.log(doctors);
       });
     })
    .fail(function(error){
