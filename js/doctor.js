@@ -17,9 +17,9 @@ Doctor.prototype.getDoctors = function(medicalIssue) {
         doctor.firstName = object.profile.first_name;
         doctor.lastName = object.profile.last_name;
         doctor.title = object.profile.title;
-        doctor.specialty = object.specialty[0];
+        doctor.specialty = object.specialties[0].actor;
         doctors.push(object);
-        console.log(doctors);
+        console.log(doctor);
       });
     })
    .fail(function(error){
