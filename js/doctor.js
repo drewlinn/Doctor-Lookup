@@ -17,8 +17,8 @@ Doctor.prototype.getDoctors = function(medicalIssue, displayDoctors) {
         doctor.lastName = object.profile.last_name;
         doctor.title = object.profile.title;
         doctors.push(doctor);
-        displayDoctors(medicalIssue, doctors, doctor, object.profile.first_name, object.profile.last_name, object.profile.title);
-        console.log(doctors);
+        displayDoctors(medicalIssue, doctor, object.profile.first_name, object.profile.last_name, object.profile.title);
+        console.log(displayDoctors);
       });
     })
    .fail(function(error){
