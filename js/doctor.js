@@ -6,7 +6,7 @@ function Doctor(first, last, title) {
     this.title = title;
 }
 
-Doctor.prototype.getDoctors = function(medicalIssue) {
+Doctor.prototype.getDoctors = function(medicalIssue, displayDoctors) {
   $.get('https://api.betterdoctor.com/2016-03-01/doctors?query=' +  medicalIssue + '&location=45.5231%2C-122.6765%2C%205&user_location=45.5231%2C-122.6765&skip=0&limit=20&user_key=' + apiKey)
    .then(function(result) {
       // console.log(result);
@@ -17,6 +17,7 @@ Doctor.prototype.getDoctors = function(medicalIssue) {
         doctor.lastName = object.profile.last_name;
         doctor.title = object.profile.title;
         doctors.push(doctor);
+        displayDoctors(medicalIssue, doctors, doctor, object.profile.first_name, object.profile.last_name, object.profile.title);
         console.log(doctors);
       });
     })

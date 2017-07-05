@@ -32,5 +32,8 @@
     "url": "https://github.com/drewlinn/Doctor-Lookup/issues"
   },
   "homepage": "https://github.com/drewlinn/Doctor-Lookup#readme",
-  "dependencies": {}
+  "dependencies": {
+    "har-schema": "^2.0.0",
+    "serve-favicon": "^2.4.3"
+  }
 }

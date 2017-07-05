@@ -1,9 +1,9 @@
 var Doctor = require('./../js/doctor.js').doctorModule;
 
 var displayDoctors = function(medicalIssue, doctors, doctor, first, last, title) {
-  $('.showDoctors').text('Here is a list of doctors in your area that specialize in ' + medicalIssue + ':');
+  $('.showDoctors').text('Here is a list of doctors in your area that specialize in ' + medicalIssue + ' research' + ':');
   doctors.forEach(function(doctor)  {
-    $('ul#listDoctors').append('Dr. ' + first + last + ', ' + title);
+    $('ul#listDoctors').append('<li>' + 'Dr. ' + first + " " + last + ', ' + title + '</li>');
   });
 };
 
