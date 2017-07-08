@@ -38,9 +38,9 @@ This application is designed to help users find doctors in their area that can a
 
 | Behavior | Input | Output |
 | :------- | :---- | :------|
-| User inputs location, is provided with a list of doctors | "Portland, OR" | "Dr. Jones, Dr. Grant, Dr. Jekyll" |
 | User inputs ailment, is provided with a list of doctors that specialize in their ailment | "Feel bad" | "Dr. Feelgood, specializes in making people feel good." |
 | Doctors are displayed by location | "Portland, OR, Feel bad" | "Here are the doctors in your area" |
+| User inputs location, is provided with a list of doctors | "Portland, OR" | "Dr. Jones, Dr. Grant, Dr. Jekyll" |
 
 3. Integration
 
