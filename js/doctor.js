@@ -11,8 +11,8 @@ Doctor.prototype.getDoctors = function(medicalIssue, displayDoctors) {
    .then(function(result) {
       var doctors = [];
       result.data.forEach(function(object) {
+        console.log(object);
         var doctor = new Doctor(object.profile.first_name, object.profile.last_name, object.profile.title);
-        console.log(doctor);
         doctors.push(doctor);
         displayDoctors(medicalIssue, doctors);
       });
